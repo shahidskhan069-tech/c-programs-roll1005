@@ -6,11 +6,11 @@ int main() {
     scanf("%s",a);
     for(i = 0; a[i] != '\0'; i++)
     {
-    if(a[i] >= 'a' && a[i] <= 'z') 
+    if(a[i] >= 'A' && a[i] <= 'Z') 
     {
-    a[i] = a[i] - 32; 
+    a[i] = a[i] + 32; 
     }
     }
-    printf("Uppercase: %s", a);
+    printf("Lowercase: %s", a);
     return 0;
 }
